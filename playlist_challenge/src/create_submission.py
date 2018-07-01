@@ -135,7 +135,6 @@ def main():
     rec_file_path = os.path.join(DATA_PATH, 'pzt_100_50.0_SpeX_KNNJ_30_70_0.4')
     sub_file_path = os.path.join(DATA_PATH, 'sample_submission.csv')
     submission_file = open(sub_file_path, 'w')
-    # submission_file.write("team_info,main,teamrozik,115220587@umail.ucc.ie" + '\n')
     submission_file.write("team_info,creative,teamrozik,115220587@umail.ucc.ie" + '\n')
 
     CHALLENGE_DATA_PATH = settings.CHALLENGE_DATA_PATH
