@@ -73,7 +73,7 @@ Run src/spotify_challenge/PopularityRecommenderExample.java to produce 500 popul
 
 **Note** We optimized the hyper-parameters of the MAtrix Factorization algorithm and SPAD by using 10000 random playlists from MPD as validation set. We split data of those playlists as 80% train and 20%validation. Optimized hyper-parameters are the one we use in the codes in this repository.
 
-**Note** We have used -Xmx24000m while running the experiments. 
+**Note** We have used -Xmx24000m while running the experiments. We used IntellijIdea IDE to run our experiments.  
 ## Creating submissions.
 
 Finally in the python module run:
