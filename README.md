@@ -53,13 +53,21 @@ After generating the baseline recommendations, we re-rank the recommendations fo
 
 The python codes are under playlist_challenge folder. First thing to do is to change MPD_PATH  to the correct path in your environment.
 For filtering the dataset and preprocessing run the following command:
-- python preprocess.py 
+```
+python preprocess.py 
+```
 
 After running the above script, run:
-- python title_popularity_recommendations.py
+
+```
+python title_popularity_recommendations.py
+```
 
 Then run:
-- python title_one_song_recommendations.py
+
+```
+python title_one_song_recommendations.py
+```
 
 The Java codes for our SubProfile-Aware Diversification (SPAD) are under SpotifyChallenge/src. First, from the training data, we pre-compute track-track similarities by using src/spotify_challenge/PreComputeItemSims.java. Change MPD_PATH with the path of your environment.
 
@@ -76,14 +84,24 @@ Run src/spotify_challenge/PopularityRecommenderExample.java to produce 500 popul
 **Note** We have used -Xmx24000m while running the experiments. We used IntellijIdea IDE to run our experiments.  
 
 ## Compiling by Maven and running the code!
-As explained above in all the files under spotify_challenge package change MPD_PATH. Then the classed can be compiled by using maven as follows: 
+As explained above in all the files under spotify_challenge package change MPD_PATH. Then the classes can be compiled and run as follows: 
 
 ```
 JAVA_HOME=/usr/java/default/ mvn clean compile
+export MAVEN_OPTS="-Xmx24000M"
+mvn exec:java -Dexec.mainClass="spotify_challenge.PreComputeItemSims"
+mvn exec:java -Dexec.mainClass="spotify_challenge.SubProfileExtraction"
+mvn exec:java -Dexec.mainClass="spotify_challenge.MFRecommenderExample"
+mvn exec:java -Dexec.mainClass="spotify_challenge.SPADReRanker"
+mvn exec:java -Dexec.mainClass="spotify_challenge.PopularityRecommenderExample"
 ```
 
+**NOTE** Do not forget to replace jdk path instead of /usr/java/default above. 
 ## Creating submissions.
 
 Finally in the python module run:
-- python create_submission.py
+```
+python create_submission.py
+```
+
 
