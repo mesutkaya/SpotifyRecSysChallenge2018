@@ -77,9 +77,10 @@ Run src/spotify_challenge/PopularityRecommenderExample.java to produce 500 popul
 
 ## Compiling by Maven and running the code!
 As explained above in all the files under spotify_challenge package change MPD_PATH. Then the classed can be compiled by using maven as follows: 
-'''
+
+```
 JAVA_HOME=/usr/java/default/ mvn clean compile
-'''
+```
 
 ## Creating submissions.
 
