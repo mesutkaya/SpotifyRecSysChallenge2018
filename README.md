@@ -71,6 +71,8 @@ Re-rank recommendations produced in the previous step by using src/spotify_chall
 
 Run src/spotify_challenge/PopularityRecommenderExample.java to produce 500 popular recommendations that will be used in cold start playlists. 
 
+**Note** We optimized the hyper-parameters of the MAtrix Factorization algorithm and SPAD by using 10000 random playlists from MPD as validation set. We split data of those playlists as 80% train and 20%validation. Optimized hyper-parameters are the one we use in the codes in this repository.
+
 ## Creating submissions.
 
 Finally in the python module run:
