@@ -19,7 +19,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
     <artifactId>SpotifyChalennge</artifactId>
     <groupId>org.insight</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,7 +91,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 
     <build>
         <plugins>
-            <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
