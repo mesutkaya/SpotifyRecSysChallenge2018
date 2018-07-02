@@ -66,7 +66,7 @@ python title_popularity_recommendations.py
 Then run:
 
 ```
-python title_one_song_recommendations.py
+python title_one_song_popularity_recommendations.py
 ```
 
 The Java codes for our SubProfile-Aware Diversification (SPAD) are under SpotifyChallenge/src. First, from the training data, we pre-compute track-track similarities by using src/spotify_challenge/PreComputeItemSims.java. Change MPD_PATH with the path of your environment.
